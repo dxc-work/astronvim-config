@@ -20,6 +20,9 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<C-n>"] = { ":set rnu!<cr>", desc = "Toggle relative line numbering" },
+    ["<C-p>"] = { ":IndentBlanklineToggle<cr>:set rnu!<cr>:set number!<cr>:set signcolumn=no<cr>",
+      desc = "Toggle plain text" },
   },
   t = {
     -- setting a mapping to false will disable it
