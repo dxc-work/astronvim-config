@@ -26,9 +26,11 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      "pyright",
+      "clojure_lsp",
+      "clojure_lsp",
+      "groovyls",
       "lua_ls",
-      "clojure_lsp"
+      "pyright",
     },
   },
   -- Configure require("lazy").setup() options
@@ -46,16 +48,17 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
     -- Set up custom filetypes
-    -- vim.filetype.add {
-    --   extension = {
-    --     foo = "fooscript",
-    --   },
-    --   filename = {
-    --     ["Foofile"] = "fooscript",
-    --   },
-    --   pattern = {
-    --     ["~/%.config/foo/.*"] = "fooscript",
-    --   },
-    -- }
+    vim.filetype.add {
+      --   extension = {
+      --     foo = "fooscript",
+      --   },
+      filename = {
+        ["Jenkinsfile"] = "groovy",
+        ["1.0.0"] = "json",
+      },
+      --   pattern = {
+      --     ["~/%.config/foo/.*"] = "fooscript",
+      --   },
+    }
   end,
 }
