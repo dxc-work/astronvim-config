@@ -25,13 +25,6 @@ return {
       format_on_save = false, -- enable or disable automatic formatting on save
     },
     -- enable servers that you already have installed without mason
-    servers = {
-      "clojure_lsp",
-      "clojure_lsp",
-      "groovyls",
-      "lua_ls",
-      "pyright",
-    },
   },
   -- Configure require("lazy").setup() options
   lazy = {

@@ -6,4 +6,9 @@ return {
 
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.yaml" },
+  { import = "astrocommunity.pack.json" },
+  -- { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
 }

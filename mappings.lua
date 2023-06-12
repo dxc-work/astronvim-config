@@ -11,7 +11,8 @@ return {
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr) require("astronvim.utils.buffer").close(bufnr) end)
+        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr) require("astronvim.utils.buffer").close(
+          bufnr) end)
       end,
       desc = "Pick to close",
     },
@@ -21,7 +22,7 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     ["<C-n>"] = { ":set rnu!<cr>", desc = "Toggle relative line numbering" },
-    ["<C-p>"] = { ":IndentBlanklineToggle<cr>:set rnu!<cr>:set number!<cr>:set signcolumn=no<cr>",
+    ["<C-p>"] = { ":IndentBlanklineToggle<cr>:set rnu!<cr>:set number!<cr>:set signcolumn=no<cr><leader>uh",
       desc = "Toggle plain text" },
   },
   t = {
