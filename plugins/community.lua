@@ -9,6 +9,7 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.motion.harpoon" },
   -- { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
 }
