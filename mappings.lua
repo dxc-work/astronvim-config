@@ -25,6 +25,9 @@ return {
     ["<C-p>"] = { ":IndentBlanklineToggle<cr>:set rnu!<cr>:set number!<cr>:set signcolumn=no<cr><leader>uh",
       desc = "Toggle plain text" },
   },
+  i = {
+    ["<M-3>"] = { "#", desc = "Hash"}
+  },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,

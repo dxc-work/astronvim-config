@@ -8,6 +8,8 @@ return {
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.motion.harpoon" },
+  { import = "astrocommunity.motion.nvim-surround" },
+  { import = "astrocommunity.motion.vim-matchup" },
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.markdown" },
